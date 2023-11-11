@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>PRELIMS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet"> 
+</head>
+<body style="background-image: linear-gradient(rgba(4,9,30,0.7),rgba(194, 134, 50, 0.801)),url(images/background.jpg); background-size: 100%;">
+<section class="header">
+    <nav>
+        <a href="main.html"><img src="images/logo1.jpg"></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="html/about.html">ABOUT</a></li>
+                <li><a href="html/contact.html">CONTACT ME!</a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+    </nav>
+
+<div class="text-box">
+    <h1>Hi, Welcome Lj Tech <span style="color: orange;">Website</span></h1>
+    <p>Please Enjoy
+        <br>
+        
+    </p>
+    <a href="#c1" class="hero-btn">click to know more :)</a>
+</div>   
+</section>
+
+<section id="c1" class="course">
+    <h1>This is my <span style="color: orange;">Skills</span> </h1>
+    
+    <div class="row">
+        <div class="course-col">
+            <h3>Programming Languages</h3>
+            <p>Proficiency in languages such as Python, Java, C++, JavaScript, etc., depending on your focus.</p>
+        </div>
+        <div class="course-col">
+            <h3>Data Analysis</h3>
+            <p>Skills in data analysis and interpretation, often using tools like Excel or more advanced tools like SQL, R, or Python libraries.</p>
+        </div>
+        <div class="course-col">
+            <h3>Web Development</h3>
+            <p>HTML, CSS, and JavaScript for front-end development.
+                <br>Back-end frameworks like Node.js, Django, Ruby on Rails, etc.</p>
+        </div>
+    </div>
+</section>
+
+<section class="campus">
+    <p><span style="color: #fff;">An random image of me lol</span>  </p>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="images/slide1.jpg" style="width:100%">
+           
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="images/slide2.jpg" style="width:100%">
+           
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="images/slide3.jpg" style="width:100%">
+           
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="images/slide4.jpg" style="width:100%">
+            
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="images/slide5.jpg" style="width:100%">
+            
+        </div>
+       
+        </div>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>  
+    </div>
+    </section>
+
+    <section class="export">
+        <h1>My<span style="color: orange"> Project</span></h1>
+        <div class="row">
+            <div class="export-col">
+                <img src="images/export4.jpg">
+                <class="layer">
+                <h3>Interactive Weather Monitoring App</h3>
+                
+                </div>
+
+            </div>
+            <div class="export-col">
+                <img src="images/export5.png"
+                style="width: 100%; height: 100%;">
+                <div class="layer">
+                    <h3> Secure File Sharing System</h3>
+                    
+                   
+                </div>
+            </div>
+            <div class="export-col">
+                <img src="images/export6.png"
+                style="width: 100%; height: 100%;">
+                <div class="layer">
+                    <h3> Online Learning Management System</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    
+
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    
+    </script>
+    
+    </body>
+    </html> 
